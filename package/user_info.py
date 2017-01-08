@@ -1,7 +1,7 @@
 #!-*- coding:utf-8 -*-
 import sys
-reload(sys)
-sys.setdefaultencoding('utf-8')
+#reload(sys)
+#sys.setdefaultencoding('utf-8')
 
 #百度搜索输入的ID
 soID='kw'

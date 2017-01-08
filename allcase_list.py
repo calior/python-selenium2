@@ -13,6 +13,6 @@ def caselist():
     alltestnames=[
         Assertions.Assertions,
         baidu.Baidu]
-    print "success read case list!"
+    print("success read case list!")
 
     return alltestnames

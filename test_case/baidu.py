@@ -1,7 +1,7 @@
 #!-*- coding:utf-8 -*-
 import sys
-reload(sys)
-sys.setdefaultencoding('utf-8')
+#reload(sys)
+#sys.setdefaultencoding('utf-8')
 
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -11,7 +11,7 @@ from selenium.webdriver.common.by import By
 import unittest,time,re,os,time
 #引入HTMLTestRunner包
 import HTMLTestRunner
-import baidu
+#import baidu
 
 #导入公共的类
 from package import common
@@ -64,9 +64,9 @@ class Baidu(unittest.TestCase):
         driver.find_element_by_class_name('login-btn').click()
         text=driver.find_element_by_xpath('html/body/div[1]/div[2]/div[2]/div/div[2]').text
         if text==resource.inputName:
-            print '测试通过'
+            print ('测试通过')
         else:
-            print '提示信息错误，请提单跟踪!'
+            print ('提示信息错误，请提单跟踪!')
 
 
 
@@ -79,7 +79,7 @@ class Baidu(unittest.TestCase):
 if __name__=='__main__':
     suite=unittest.TestSuite()
     #suite.addTest(Baidu('testBaidu'))
-    suite.addTest(unittest.makeSuite(baidu.Baidu))
+    suite.addTest(unittest.makeSuite(Baidu))
 
     #定义报告存放路劲
     filename="D:\\Git\\PyCharm\\pythonSelenium2\\report\\result.html"

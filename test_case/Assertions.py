@@ -1,8 +1,8 @@
 #!-*- coding:utf-8 -*-
 import unittest
 import sys
-reload(sys)
-sys.setdefaultencoding('utf-8')
+#reload(sys)
+#sys.setdefaultencoding('utf-8')
 '''断言的测试应用'''
 from selenium import webdriver
 class Assertions(unittest.TestCase):
@@ -34,7 +34,7 @@ class Assertions(unittest.TestCase):
         try:
             driver.find_element_by_id('kw1ffg').send_keys('webdriver')
         except:
-            driver.get_screenshot_as_file('D:/Git/PyCharm/pythonSelenium2/image/error_png.png')
+            driver.get_screenshot_as_file('E:/workspace/NetBeansProjects/python-selenium2/image/error_png.png')
 
 
     def tearDown(self):

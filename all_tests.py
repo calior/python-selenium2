@@ -23,8 +23,8 @@ for db in alltestnames:
 #获取现在的时间
 now=time.strftime("%Y-%m-%d-%H_%M_%S",time.localtime(time.time()))
 #定义报告存放路劲
-filename='D:\\Git\\PyCharm\\Develop-Python-Selenium2\\report\\'+now+'allTests.html'
-fp=file(filename,'wb')
+filename='E:\\workspace\\NetBeansProjects\\python-selenium2\\report\\'+now+'allTests.html'
+fp=open(filename,'wb')
 
 #定义测试报告
 runner=HTMLTestRunner.HTMLTestRunner(
