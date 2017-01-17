@@ -82,7 +82,7 @@ if __name__=='__main__':
     suite.addTest(unittest.makeSuite(Baidu))
 
     #定义报告存放路劲
-    filename="D:\\Git\\PyCharm\\pythonSelenium2\\report\\result.html"
+    filename="E:\\workspace\\selenium\\python-selenium2\\report\\result.html"
     fp=file(filename,'wb')
     runner=HTMLTestRunner.HTMLTestRunner(
         stream=fp,

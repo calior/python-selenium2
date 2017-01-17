@@ -34,7 +34,7 @@ class Assertions(unittest.TestCase):
         try:
             driver.find_element_by_id('kw1ffg').send_keys('webdriver')
         except:
-            driver.get_screenshot_as_file('E:/workspace/NetBeansProjects/python-selenium2/image/error_png.png')
+            driver.get_screenshot_as_file('E:/workspace/selenium/python-selenium2/image/error_png.png')
 
 
     def tearDown(self):

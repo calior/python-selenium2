@@ -5,14 +5,14 @@ Created on 2014-11-16
 @author: Administrator
 '''
 import sys
-reload(sys)
-sys.setdefaultencoding('utf-8')
+#reload(sys)
+#sys.setdefaultencoding('utf-8')
 
-from selenium2 import webdriver
-from selenium2.webdriver.common.keys import Keys
-from selenium2.webdriver.support.ui import Select
-from selenium2.common.exceptions import NoSuchElementException
-from selenium2.webdriver.common.by import By
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.ui import Select
+from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.common.by import By
 import unittest,time,re,os,time
 
 #导入公共的类
